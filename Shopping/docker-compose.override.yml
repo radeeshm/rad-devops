@@ -5,7 +5,7 @@ services:
     container_name: shoppingapi
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - "DatabaseSettings:ConnectionStrings=mongosb://shoppingdb:27017"
+      - "DatabaseSettings:ConnectionStrings=mongodb://shoppingdb:27017"
     depends_on:
       - shopping.db
 
